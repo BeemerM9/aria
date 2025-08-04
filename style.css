@@ -1,0 +1,92 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f1a;
+  color: #f0f0f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+}
+
+.profile-card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1e1e2e;
+  border-radius: 15px;
+  overflow: hidden;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  object-fit: cover;
+}
+
+.profile-image {
+  flex: 1 1 300px;
+}
+
+.profile-content {
+  flex: 2 1 600px;
+  padding: 20px 30px;
+}
+
+.profile-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #a9c1ff;
+}
+
+.title {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: #b7b7f0;
+}
+
+.bio {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.skills {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li {
+  background-color: #2a2a3a;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background 0.3s;
+}
+
+.skills li:hover {
+  background-color: #3e3e5a;
+  cursor: pointer;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-content {
+    padding: 20px;
+  }
+
+  .skills li {
+    display: inline-block;
+    margin: 5px;
+  }
+}
